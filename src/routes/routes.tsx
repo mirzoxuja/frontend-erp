@@ -16,6 +16,7 @@ import {
   StudentProfile,
   Blog,
   BlogDetail,
+  NotFound,
 } from "../pages";
 
 const router = createBrowserRouter([
@@ -86,7 +87,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <h1>Not Found</h1>,
+    element: <NotFound />,
   },
 ]);
 export default router;
