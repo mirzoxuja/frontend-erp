@@ -1,0 +1,15 @@
+export { default as Home } from "./Home";
+export { default as Login } from "./Login";
+export { default as Register } from "./Register";
+export { default as Courses } from "./Courses";
+export { default as CourseDetail } from "./CourseDetail";
+export { default as Teachers } from "./Teachers";
+export { default as About } from "./About";
+export { default as Contact } from "./Contact";
+export { default as Groups } from "./Groups";
+export { default as GroupDetail } from "./GroupDetail";
+export { default as AddGroup } from "./AddGroup";
+export { default as Students } from "./Students";
+export { default as StudentProfile } from "./StudentProfile";
+export { default as Blog } from "./Blog";
+export { default as BlogDetail } from "./BlogDetail";

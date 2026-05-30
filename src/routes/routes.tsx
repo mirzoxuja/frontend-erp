@@ -1,5 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../components/layouts/RootLayout";
+import {
+  Home,
+  Login,
+  Register,
+  Courses,
+  CourseDetail,
+  Teachers,
+  About,
+  Contact,
+  Groups,
+  GroupDetail,
+  AddGroup,
+  Students,
+  StudentProfile,
+  Blog,
+  BlogDetail,
+} from "../pages";
 
 const router = createBrowserRouter([
   {
@@ -7,21 +24,65 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Home</h1>,
+        element: <Home />,
+      },
+      {
+        path: "/courses",
+        element: <Courses />,
+      },
+      {
+        path: "/courses/:id",
+        element: <CourseDetail />,
+      },
+      {
+        path: "/teachers",
+        element: <Teachers />,
       },
       {
         path: "/about",
-        element: <h1>About</h1>,
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/groups",
+        element: <Groups />,
+      },
+      {
+        path: "/groups/:id",
+        element: <GroupDetail />,
+      },
+      {
+        path: "/groups/add",
+        element: <AddGroup />,
+      },
+      {
+        path: "/students",
+        element: <Students />,
+      },
+      {
+        path: "/students/:id",
+        element: <StudentProfile />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/blog/:id",
+        element: <BlogDetail />,
       },
     ],
   },
   {
     path: "/login",
-    element: <h1>Login</h1>,
+    element: <Login />,
   },
   {
     path: "/register",
-    element: <h1>Register</h1>,
+    element: <Register />,
   },
   {
     path: "*",

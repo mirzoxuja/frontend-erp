@@ -1,8 +1,14 @@
+import { Outlet } from "react-router-dom";
+
 interface Props {
   children?: React.ReactNode;
 }
 
-const RootLayout = ({ children }: Props) => {
-  return <div>{children}</div>;
+const RootLayout = ({}: Props) => {
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
 };
 export default RootLayout;
