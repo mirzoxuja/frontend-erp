@@ -4,6 +4,7 @@ const ENDPOINTS = {
     register: "/auth/register",
     logout: "/auth/logout",
     refresh: "/auth/refresh",
+    me: "/auth/me",
   },
   course: {
     list: "/courses",

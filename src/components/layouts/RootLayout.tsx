@@ -1,14 +1,29 @@
+import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
+import useGetUser from "../../hooks/api/useGetUser";
+import useUserStore from "../../store/user.store";
+import { Footer, Header } from "../home";
 
 interface Props {
   children?: React.ReactNode;
 }
 
 const RootLayout = ({}: Props) => {
+  const { data, isSuccess } = useGetUser();
+  const { setUser, setIsAuthenticated } = useUserStore();
+  useEffect(() => {
+    if (isSuccess) {
+      const user = data?.data.data;
+      setUser(user);
+      setIsAuthenticated(true);
+    }
+  }, [isSuccess]);
   return (
-    <div>
+    <>
+      <Header />
       <Outlet />
-    </div>
+      <Footer />
+    </>
   );
 };
 export default RootLayout;
