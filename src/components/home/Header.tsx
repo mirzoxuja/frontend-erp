@@ -2,7 +2,7 @@ import Icon from "../ui/Icon";
 import ProfileDropdown from "../ui/ProfileDropdown";
 import useUserStore from "../../store/user.store";
 import { navLinks } from "../../data/home.data";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const isAuthenticated = useUserStore((state: any) => state.isAuthenticated);
