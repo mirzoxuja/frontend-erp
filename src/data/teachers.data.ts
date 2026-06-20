@@ -11,6 +11,7 @@ export const teacherCategories: ITeacherCategory[] = [
 
 export const teachersList: ITeacherCard[] = [
   {
+    id: "akmal-karimov",
     name: "Akmal Karimov",
     role: "JavaScript Lead",
     category: "frontend",
@@ -21,8 +22,46 @@ export const teachersList: ITeacherCard[] = [
       ["4.9", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=12",
+    reviewsCount: "186",
+    fullBio: [
+      "Akmal Karimov — frontend dasturlash bo'yicha 8 yillik amaliy tajribaga ega mutaxassis. Karyerasini 2018-yilda EPAM Systems kompaniyasida boshlagan, keyinchalik Uzcard'da to'lov tizimlari uchun yirik frontend ilovalarni ishlab chiqqan.",
+      "2022-yildan beri O'quv Markazda JavaScript yo'nalishini boshqaradi. Uning darslari amaliyotga asoslangan: har bir mavzu real loyiha misolida tushuntiriladi. Bitiruvchilarining 78%i kurs tugagach 3 oy ichida ishga joylashgan.",
+    ],
+    skills: ["JavaScript (ES6+)", "TypeScript", "React", "Node.js", "Git", "Webpack / Vite", "Testing (Jest)"],
+    workHistory: [
+      {
+        period: "2022 — hozir",
+        title: "JavaScript Lead",
+        company: "O'quv Markaz, Toshkent",
+        description: "JavaScript yo'nalishi rahbari. 12 ta kurs muallifi, o'quv dasturlarini ishlab chiqish va yangi o'qituvchilarni tayyorlash.",
+        current: true,
+      },
+      {
+        period: "2020 — 2022",
+        title: "Senior Frontend Developer",
+        company: "Uzcard, Toshkent",
+        description: "To'lov tizimlari uchun web ilovalar. React + TypeScript stack, 1 mln+ foydalanuvchili mahsulotlar.",
+      },
+      {
+        period: "2018 — 2020",
+        title: "Frontend Developer",
+        company: "EPAM Systems",
+        description: "Xalqaro fintech loyihalarida frontend ishlab chiqish, kod sifati bo'yicha mentorlik.",
+      },
+    ],
+    certificates: [
+      { title: "AWS Certified Developer", issuer: "Amazon, 2024" },
+      { title: "Meta Frontend Developer", issuer: "Coursera, 2023" },
+      { title: "Pedagogika asoslari", issuer: "TDPU, 2022" },
+    ],
+    schedule: [
+      { days: "Du / Chor / Ju", time: "18:00 — 20:00" },
+      { days: "Sesh / Pay", time: "14:00 — 16:00" },
+      { days: "Shanba", time: "10:00 — 13:00" },
+    ],
   },
   {
+    id: "madina-ergasheva",
     name: "Madina Ergasheva",
     role: "UX/UI dizayner",
     category: "design",
@@ -33,8 +72,38 @@ export const teachersList: ITeacherCard[] = [
       ["4.9", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=47",
+    reviewsCount: "97",
+    fullBio: [
+      "Madina Ergasheva — UX/UI dizayn sohasida 7 yillik tajribaga ega mutaxassis. Yandex'da foydalanuvchi interfeyslari ustida ishlagan, bir nechta loyihalari Behance'da chop etilgan.",
+      "Hozirda O'quv Markazda dizayn yo'nalishini boshqaradi va talabalarga real loyihalar orqali portfolio yaratishda yordam beradi.",
+    ],
+    skills: ["Figma", "User Research", "Wireframing", "Prototyping", "Design Systems"],
+    workHistory: [
+      {
+        period: "2022 — hozir",
+        title: "UX/UI dizayner",
+        company: "O'quv Markaz, Toshkent",
+        description: "Dizayn yo'nalishi rahbari, 8 ta kurs muallifi.",
+        current: true,
+      },
+      {
+        period: "2019 — 2022",
+        title: "Product Designer",
+        company: "Yandex",
+        description: "Foydalanuvchi interfeyslari va dizayn tizimlari ustida ishlash.",
+      },
+    ],
+    certificates: [
+      { title: "Google UX Design", issuer: "Coursera, 2023" },
+      { title: "Pedagogika asoslari", issuer: "TDPU, 2021" },
+    ],
+    schedule: [
+      { days: "Du / Chor", time: "17:00 — 19:00" },
+      { days: "Shanba", time: "11:00 — 14:00" },
+    ],
   },
   {
+    id: "sherzod-rahimov",
     name: "Sherzod Rahimov",
     role: "Python / Django Senior",
     category: "backend",
@@ -45,8 +114,38 @@ export const teachersList: ITeacherCard[] = [
       ["4.8", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=33",
+    reviewsCount: "212",
+    fullBio: [
+      "Sherzod Rahimov — backend dasturlash bo'yicha 10 yillik tajribaga ega senior mutaxassis. AWS sertifikatlangan va bir nechta yirik loyihalarda arxitektor sifatida ishlagan.",
+      "O'quv Markazda Python va Django bo'yicha chuqurlashtirilgan kurslar olib boradi.",
+    ],
+    skills: ["Python", "Django", "REST API", "PostgreSQL", "AWS", "Docker"],
+    workHistory: [
+      {
+        period: "2021 — hozir",
+        title: "Python / Django Senior",
+        company: "O'quv Markaz, Toshkent",
+        description: "Backend yo'nalishi bo'yicha 15 ta kurs muallifi.",
+        current: true,
+      },
+      {
+        period: "2016 — 2021",
+        title: "Backend Engineer",
+        company: "Turli IT kompaniyalar",
+        description: "Yirik backend tizimlarini loyihalashtirish va qo'llab-quvvatlash.",
+      },
+    ],
+    certificates: [
+      { title: "AWS Solutions Architect", issuer: "Amazon, 2022" },
+      { title: "Pedagogika asoslari", issuer: "TDPU, 2020" },
+    ],
+    schedule: [
+      { days: "Se / Pay", time: "18:00 — 20:00" },
+      { days: "Shanba", time: "10:00 — 13:00" },
+    ],
   },
   {
+    id: "nodira-yusupova",
     name: "Nodira Yusupova",
     role: "React Developer",
     category: "frontend",
@@ -57,8 +156,32 @@ export const teachersList: ITeacherCard[] = [
       ["4.8", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=45",
+    reviewsCount: "84",
+    fullBio: [
+      "Nodira Yusupova — 5 yillik React tajribasiga ega frontend dasturchi. Bir nechta fintech mahsulotlarini yaratishda asosiy dasturchi bo'lgan.",
+      "Darslarida amaliy loyihalar orqali React ekotizimini chuqur o'rgatadi.",
+    ],
+    skills: ["React", "Redux", "TypeScript", "Tailwind CSS"],
+    workHistory: [
+      {
+        period: "2023 — hozir",
+        title: "React Developer",
+        company: "O'quv Markaz, Toshkent",
+        description: "Frontend kurslari muallifi va mentor.",
+        current: true,
+      },
+      {
+        period: "2020 — 2023",
+        title: "Frontend Developer",
+        company: "Fintech startup",
+        description: "Moliyaviy mahsulotlar uchun React asosida interfeyslar yaratish.",
+      },
+    ],
+    certificates: [{ title: "Meta Frontend Developer", issuer: "Coursera, 2022" }],
+    schedule: [{ days: "Du / Ju", time: "16:00 — 18:00" }],
   },
   {
+    id: "sevara-tursunova",
     name: "Sevara Tursunova",
     role: "Data Scientist",
     category: "backend",
@@ -69,8 +192,26 @@ export const teachersList: ITeacherCard[] = [
       ["4.7", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=20",
+    reviewsCount: "51",
+    fullBio: [
+      "Sevara Tursunova — mashinaviy o'rganish sohasida 6 yillik tajribaga ega, Kaggle Master darajasiga ega mutaxassis.",
+      "Talabalarga ma'lumotlar tahlili va ML asoslarini amaliy loyihalar orqali o'rgatadi.",
+    ],
+    skills: ["Python", "Pandas", "Scikit-learn", "TensorFlow"],
+    workHistory: [
+      {
+        period: "2022 — hozir",
+        title: "Data Scientist",
+        company: "O'quv Markaz, Toshkent",
+        description: "ML kurslari muallifi.",
+        current: true,
+      },
+    ],
+    certificates: [{ title: "TensorFlow Developer", issuer: "Google, 2023" }],
+    schedule: [{ days: "Chor / Shanba", time: "15:00 — 17:00" }],
   },
   {
+    id: "otabek-salimov",
     name: "Otabek Salimov",
     role: "Flutter Developer",
     category: "mobile",
@@ -81,8 +222,26 @@ export const teachersList: ITeacherCard[] = [
       ["4.8", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=15",
+    reviewsCount: "63",
+    fullBio: [
+      "Otabek Salimov — Flutter asosida 30+ mobil ilova yaratgan tajribali dasturchi.",
+      "O'quv Markazda mobil dasturlash bo'yicha amaliy kurslar olib boradi.",
+    ],
+    skills: ["Dart", "Flutter", "Firebase", "REST API"],
+    workHistory: [
+      {
+        period: "2021 — hozir",
+        title: "Flutter Developer",
+        company: "O'quv Markaz, Toshkent",
+        description: "Mobil dasturlash kurslari muallifi.",
+        current: true,
+      },
+    ],
+    certificates: [{ title: "Flutter Certified", issuer: "Google, 2022" }],
+    schedule: [{ days: "Se / Pay", time: "17:00 — 19:00" }],
   },
   {
+    id: "diloraxon-nazarova",
     name: "Diloraxon Nazarova",
     role: "Marketing Expert",
     category: "marketing",
@@ -93,8 +252,26 @@ export const teachersList: ITeacherCard[] = [
       ["4.8", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=44",
+    reviewsCount: "47",
+    fullBio: [
+      "Diloraxon Nazarova — raqamli marketing bo'yicha 7 yillik tajribaga ega, Google Ads sertifikatlangan mutaxassis.",
+      "Talabalarga SMM va kontent marketing strategiyalarini amaliy misollar orqali o'rgatadi.",
+    ],
+    skills: ["SEO", "Google Ads", "SMM", "Content Marketing"],
+    workHistory: [
+      {
+        period: "2022 — hozir",
+        title: "Marketing Expert",
+        company: "O'quv Markaz, Toshkent",
+        description: "Marketing kurslari muallifi.",
+        current: true,
+      },
+    ],
+    certificates: [{ title: "Google Ads Certified", issuer: "Google, 2023" }],
+    schedule: [{ days: "Du / Chor", time: "18:00 — 20:00" }],
   },
   {
+    id: "jasur-mahmudov",
     name: "Jasur Mahmudov",
     role: "DevOps muhandisi",
     category: "backend",
@@ -105,8 +282,26 @@ export const teachersList: ITeacherCard[] = [
       ["4.7", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=51",
+    reviewsCount: "39",
+    fullBio: [
+      "Jasur Mahmudov — DevOps sohasida 9 yillik tajribaga ega, AWS va Kubernetes bo'yicha mutaxassis.",
+      "Infratuzilma va CI/CD pipeline qurish bo'yicha amaliy kurslar olib boradi.",
+    ],
+    skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux"],
+    workHistory: [
+      {
+        period: "2021 — hozir",
+        title: "DevOps muhandisi",
+        company: "O'quv Markaz, Toshkent",
+        description: "DevOps kurslari muallifi.",
+        current: true,
+      },
+    ],
+    certificates: [{ title: "AWS DevOps Engineer", issuer: "Amazon, 2023" }],
+    schedule: [{ days: "Pay / Shanba", time: "16:00 — 18:00" }],
   },
   {
+    id: "bekzod-salimov",
     name: "Bekzod Salimov",
     role: "Backend Developer",
     category: "backend",
@@ -117,8 +312,26 @@ export const teachersList: ITeacherCard[] = [
       ["4.7", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=59",
+    reviewsCount: "45",
+    fullBio: [
+      "Bekzod Salimov — Node.js asosida backend tizimlar yaratish bo'yicha 6 yillik tajribaga ega.",
+      "Fintech loyihalarda ishlagan tajribasini darslarida amaliy misollar bilan ulashadi.",
+    ],
+    skills: ["Node.js", "Express", "MongoDB", "REST API"],
+    workHistory: [
+      {
+        period: "2022 — hozir",
+        title: "Backend Developer",
+        company: "O'quv Markaz, Toshkent",
+        description: "Backend kurslari muallifi.",
+        current: true,
+      },
+    ],
+    certificates: [{ title: "Node.js Certified", issuer: "OpenJS, 2022" }],
+    schedule: [{ days: "Se / Chor", time: "17:00 — 19:00" }],
   },
   {
+    id: "kamola-yusupova",
     name: "Kamola Yusupova",
     role: "Grafik dizayner",
     category: "design",
@@ -129,8 +342,26 @@ export const teachersList: ITeacherCard[] = [
       ["4.9", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=32",
+    reviewsCount: "71",
+    fullBio: [
+      "Kamola Yusupova — grafik dizayn sohasida 8 yillik tajribaga ega, Adobe sertifikatlangan mutaxassis.",
+      "Brending va vizual dizayn asoslarini amaliy loyihalar orqali o'rgatadi.",
+    ],
+    skills: ["Photoshop", "Illustrator", "InDesign", "Branding"],
+    workHistory: [
+      {
+        period: "2021 — hozir",
+        title: "Grafik dizayner",
+        company: "O'quv Markaz, Toshkent",
+        description: "Dizayn kurslari muallifi.",
+        current: true,
+      },
+    ],
+    certificates: [{ title: "Adobe Certified Expert", issuer: "Adobe, 2021" }],
+    schedule: [{ days: "Du / Ju", time: "15:00 — 17:00" }],
   },
   {
+    id: "aziz-inomov",
     name: "Aziz Inomov",
     role: "Java Developer",
     category: "backend",
@@ -141,8 +372,26 @@ export const teachersList: ITeacherCard[] = [
       ["4.6", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=68",
+    reviewsCount: "33",
+    fullBio: [
+      "Aziz Inomov — enterprise Java ilovalari sohasida 7 yillik tajribaga ega, Spring frameworklari bo'yicha mutaxassis.",
+      "Yirik korporativ tizimlar ustida ishlash tajribasini darslarda ulashadi.",
+    ],
+    skills: ["Java", "Spring Boot", "Hibernate", "MySQL"],
+    workHistory: [
+      {
+        period: "2022 — hozir",
+        title: "Java Developer",
+        company: "O'quv Markaz, Toshkent",
+        description: "Backend kurslari muallifi.",
+        current: true,
+      },
+    ],
+    certificates: [{ title: "Oracle Certified Java Developer", issuer: "Oracle, 2021" }],
+    schedule: [{ days: "Chor / Shanba", time: "18:00 — 20:00" }],
   },
   {
+    id: "gulnora-rasulova",
     name: "Gulnora Rasulova",
     role: "Product Designer",
     category: "design",
@@ -153,5 +402,22 @@ export const teachersList: ITeacherCard[] = [
       ["4.8", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=24",
+    reviewsCount: "58",
+    fullBio: [
+      "Gulnora Rasulova — mahsulot dizayni sohasida 6 yillik tajribaga ega, Tinkoff loyihasida ishlagan mutaxassis.",
+      "Foydalanuvchi tajribasi va dizayn tizimlari bo'yicha amaliy kurslar olib boradi.",
+    ],
+    skills: ["Figma", "Design Systems", "User Testing", "Prototyping"],
+    workHistory: [
+      {
+        period: "2022 — hozir",
+        title: "Product Designer",
+        company: "O'quv Markaz, Toshkent",
+        description: "Dizayn kurslari muallifi.",
+        current: true,
+      },
+    ],
+    certificates: [{ title: "Google UX Design", issuer: "Coursera, 2022" }],
+    schedule: [{ days: "Du / Se", time: "16:00 — 18:00" }],
   },
 ];

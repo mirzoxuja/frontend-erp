@@ -15,7 +15,10 @@ export const navLinks: INavLink[] = [
   { label: "Kurslar", href: "/courses" },
   { label: "O'qituvchilar", href: "/teachers" },
   { label: "Blog", href: "/blog" },
+  { label: "Narxlar", href: "/pricing" },
+  { label: "FAQ", href: "/faq" },
   { label: "Aloqa", href: "/contact" },
+  { label: "About", href: "/about" },
 ];
 
 export const stats: IStat[] = [
@@ -223,32 +226,29 @@ export const testimonials: ITestimonial[] = [
 
 export const faqs: IFaq[] = [
   {
-    q: "O'quv markaziga qanday yozilish mumkin?",
-    a: "Saytdagi \"Ro'yxatdan o'tish\" tugmasini bosing yoki ofisimizga keling. Konsultantlarimiz sizga eng mos kursni tanlashda yordam berishadi va to'lov shartlari haqida ma'lumot beradi.",
+    q: "O'qish uchun oldindan bilim kerakmi?",
+    a: "Yo'q. Boshlovchi kurslarimiz nolinchi darajadan mo'ljallangan — kompyuterda ishlashning oddiy ko'nikmalari yetarli. O'rta va yuqori darajadagi kurslar uchun esa kirish testi o'tkazamiz va sizga mos kursni tavsiya qilamiz.",
   },
   {
-    q: "Darslar qachon va qayerda bo'lib o'tadi?",
-    a: "Darslar hafta davomida ertalabki, kunduzgi va kechki guruhlarda, ham offline (markazda) ham online formatda o'tkaziladi.",
+    q: "Yosh chegarasi bormi?",
+    a: "14 yoshdan 25 yoshgacha",
   },
   {
-    q: "To'lov qaysi usullar orqali amalga oshiriladi?",
-    a: "To'lovni naqd, plastik karta yoki bo'lib-bo'lib to'lash imkoniyati orqali amalga oshirishingiz mumkin.",
+    q: "Darslar qanday formatda o'tadi?",
+    a: "Offline kurslar markazimizda jonli, online kurslar esa masofadan, lekin bir xil dastur va o'qituvchilar bilan o'tkaziladi",
   },
   {
-    q: "Sertifikat beriladimi va u tan olinadimi?",
-    a: "Ha, kursni muvaffaqiyatli tugatgan har bir talaba davlat tomonidan tan olingan sertifikatga ega bo'ladi.",
+    q: "O'z sur'atimda o'qiy olamanmi?",
+    a: "Bilmadim to'g'risi qande javob berishni",
   },
   {
-    q: "Online va offline kurslar o'rtasidagi farq nimada?",
-    a: "Offline kurslar markazimizda jonli, online kurslar esa masofadan, lekin bir xil dastur va o'qituvchilar bilan o'tkaziladi.",
+    q: "Bepul demo darslar bormi",
+    a: "I don't know bro, just leave me alone",
   },
-  {
-    q: "Ishga joylashishda yordam berasizmi?",
-    a: "Albatta. 100+ hamkor kompaniyamiz bor va eng yaxshi bitiruvchilarni ishga joylashtirishda yordam beramiz.",
-  },
+  
 ];
 
 export const footerColumns: IFooterColumn[] = [
-  { title: "SAHIFALAR", links: ["Biz haqimizda", "Kurslar", "O'qituvchilar", "Blog", "Aloqa"] },
-  { title: "KURSLAR", links: ["Frontend", "Backend", "UX/UI Dizayn", "Mobil dasturlash", "Marketing"] },
+  { title: "SAHIFALAR", links: ["Biz haqimizda", "Kurslar", "O'qituvchilar", "Narxlar", "Blog", "Kursga yozilish", "FAQ", "Aloqa"] },
+  { title: "KURSLAR", links: ["Frontend", "Backend", "Dizayn", "Mobil",] },
 ];
