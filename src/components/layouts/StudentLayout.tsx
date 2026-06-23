@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";import useUserStore from "../../store/user.store";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import useUserStore from "../../store/user.store";
 import { X } from "lucide-react";
 
 const navItems = [
