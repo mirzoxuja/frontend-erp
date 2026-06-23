@@ -1,5 +1,6 @@
-import { NavLink, Outlet } from "react-router-dom";
-import useUserStore from "../../store/user.store";
+import { useState } from "react";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";import useUserStore from "../../store/user.store";
+import { X } from "lucide-react";
 
 const navItems = [
   { label: "Dashboard", path: "/dashboard", icon: "home" },
@@ -37,6 +38,8 @@ const SidebarIcon = ({ name, className }: { name: string; className?: string }) 
 };
 
 const StudentLayout = () => {
+  const navigate = useNavigate();
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
   const user = useUserStore((state: any) => state.user);
   const userName = user?.firstName ?? "Bobur Tojiev";
 
@@ -104,7 +107,10 @@ const StudentLayout = () => {
             <p className="text-sm font-semibold text-slate-800 truncate">{userName}</p>
             <p className="text-xs text-slate-400">Online talaba</p>
           </div>
-          <button className="text-slate-400 hover:text-slate-600 transition">
+          <button
+            onClick={() => setShowLogoutModal(true)}
+            className="text-slate-400 hover:text-slate-600 transition"
+          >
             <SidebarIcon name="logout" className="h-[18px] w-[18px]" />
           </button>
         </div>
@@ -144,6 +150,49 @@ const StudentLayout = () => {
           <Outlet />
         </main>
       </div>
+
+      {/* Logout confirmation modal */}
+      {showLogoutModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl shadow-xl w-full max-w-md">
+            <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100">
+              <h2 className="text-lg font-bold text-slate-900">Tizimdan chiqasizmi?</h2>
+              <button
+                onClick={() => setShowLogoutModal(false)}
+                className="text-slate-400 hover:text-slate-600"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="px-6 py-5 border-b border-slate-100">
+              <p className="text-slate-600">
+                Hisobingizdan chiqmoqchimisiz? Davom etish uchun qaytadan login
+                va parolingiz bilan tizimga kirishingiz kerak bo'ladi.
+              </p>
+            </div>
+
+            <div className="px-6 py-4 flex items-center justify-end gap-3">
+              <button
+                onClick={() => setShowLogoutModal(false)}
+                className="border border-slate-200 rounded-lg px-5 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+              >
+                Bekor qilish
+              </button>
+              <button
+                onClick={() => {
+                  localStorage.removeItem("token");
+                  setShowLogoutModal(false);
+                  navigate("/login");
+                }}
+                className="bg-red-500 hover:bg-red-600 text-white rounded-lg px-5 py-2.5 text-sm font-semibold"
+              >
+                Ha, chiqish
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
