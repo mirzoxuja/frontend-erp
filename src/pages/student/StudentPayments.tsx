@@ -5,7 +5,6 @@ import {
   BookOpen,
   Calendar,
   Download,
-  CreditCard,
 } from "lucide-react";
 
 const stats = [
